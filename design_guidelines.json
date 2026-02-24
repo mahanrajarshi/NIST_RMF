@@ -1,0 +1,127 @@
+{
+  "identity": {
+    "name": "NIST AI RMF Auditor",
+    "tone": "Authoritative, Precise, Objective, High-Contrast",
+    "aesthetic": "Swiss-Cyber / Performance Pro",
+    "description": "A high-precision compliance tool for enterprise AI risk management. It combines the rigorous objectivity of Swiss design with the density of a cyber-security dashboard."
+  },
+  "typography": {
+    "fonts": {
+      "headings": {
+        "family": "Manrope, sans-serif",
+        "weights": ["600", "800"],
+        "usage": "Section headers, page titles, big metrics. Tight tracking."
+      },
+      "body": {
+        "family": "Inter, sans-serif",
+        "weights": ["400", "500"],
+        "usage": "Long form text, descriptions, instructions."
+      },
+      "mono": {
+        "family": "JetBrains Mono, monospace",
+        "weights": ["400", "500"],
+        "usage": "Data values, scores, codes, decorative labels (e.g., 'FIG 1.0')."
+      }
+    },
+    "scale": {
+      "h1": "text-5xl md:text-7xl tracking-tighter font-extrabold",
+      "h2": "text-3xl md:text-5xl tracking-tight font-bold",
+      "h3": "text-2xl md:text-3xl tracking-tight font-semibold",
+      "label": "text-xs font-mono uppercase tracking-widest text-muted-foreground"
+    }
+  },
+  "colors": {
+    "palette": {
+      "background": "#FFFFFF",
+      "foreground": "#0F172A",
+      "card": "#FFFFFF",
+      "card_foreground": "#0F172A",
+      "primary": "#0F172A",
+      "primary_foreground": "#FFFFFF",
+      "secondary": "#F1F5F9",
+      "secondary_foreground": "#0F172A",
+      "accent": "#F8FAFC",
+      "accent_foreground": "#0F172A",
+      "destructive": "#DC2626",
+      "success": "#16A34A",
+      "border": "#E2E8F0",
+      "input": "#F1F5F9",
+      "ring": "#0F172A"
+    },
+    "gradients": {
+      "risk_high": "bg-red-50 text-red-700 border-red-200",
+      "risk_low": "bg-green-50 text-green-700 border-green-200",
+      "risk_med": "bg-amber-50 text-amber-700 border-amber-200",
+      "swiss_accent": "bg-[#002FA7] text-white"
+    }
+  },
+  "visual_enhancers": {
+    "borders": "border border-border",
+    "radius": "rounded-none",
+    "shadows": "shadow-none",
+    "textures": {
+      "grid": "bg-[linear-gradient(to_right,#e5e7eb_1px,transparent_1px),linear-gradient(to_bottom,#e5e7eb_1px,transparent_1px)] bg-[size:4rem_4rem]",
+      "dots": "bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"
+    }
+  },
+  "layout_strategies": {
+    "landing": "Tetris Grid: Asymmetric layout. Hero takes 8 cols. Industry selector takes 4 cols.",
+    "dashboard": "Bento Grid: Dense, information-heavy. No gaps larger than gap-4.",
+    "assessment": "Split Rail: Left side fixed navigation (Progress), Right side scrollable content.",
+    "container": "max-w-[1600px] mx-auto px-4 md:px-8"
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground h-12 px-8 rounded-none font-mono uppercase tracking-widest hover:bg-primary/90 transition-all",
+      "outline": "border-2 border-primary bg-transparent text-primary h-12 px-8 rounded-none font-mono uppercase tracking-widest hover:bg-primary hover:text-primary-foreground transition-all"
+    },
+    "cards": {
+      "base": "bg-card border border-border p-6 md:p-8 rounded-none relative overflow-hidden group hover:border-primary transition-colors",
+      "metric": "flex flex-col justify-between h-full bg-secondary/30"
+    },
+    "inputs": {
+      "base": "h-12 bg-white border-2 border-input px-4 rounded-none focus:border-primary focus:ring-0 transition-all font-mono text-sm"
+    }
+  },
+  "motion": {
+    "page_transition": "initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.4, ease: 'circOut' }}",
+    "hover": "whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.99 }}",
+    "stagger": "staggerChildren: 0.1"
+  },
+  "assets": {
+    "images": {
+      "hero_abstract": "https://images.pexels.com/photos/21847193/pexels-photo-21847193.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "healthcare": "https://images.unsplash.com/photo-1769147555720-71fc71bfc216?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBob3NwaXRhbCUyMGJ1aWxkaW5nJTIwYXJjaGl0ZWN0dXJlfGVufDB8fHx8MTc3MTkwOTA0OXww&ixlib=rb-4.1.0&q=85",
+      "finance": "https://images.pexels.com/photos/1102845/pexels-photo-1102845.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "tech": "https://images.pexels.com/photos/17489158/pexels-photo-17489158.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "government": "https://images.pexels.com/photos/18327426/pexels-photo-18327426.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "energy": "https://images.unsplash.com/photo-1765263857986-271b4923632d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHwxfHxlbmVyZ3klMjB3aW5kJTIwdHVyYmluZSUyMHNvbGFyJTIwcGFuZWx8ZW58MHx8fHwxNzcxOTA5MDUzfDA&ixlib=rb-4.1.0&q=85",
+      "education": "https://images.pexels.com/photos/12091126/pexels-photo-12091126.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    "icons": "Use 'lucide-react' for all UI icons. Use thin strokes (stroke-width={1.5}) to match the precise aesthetic."
+  },
+  "charts": {
+    "library": "recharts",
+    "style": {
+      "radar": {
+        "stroke": "#0F172A",
+        "strokeWidth": 3,
+        "fill": "#0F172A",
+        "fillOpacity": 0.1
+      },
+      "grid": {
+        "stroke": "#E2E8F0"
+      }
+    }
+  },
+  "universal_guidelines": [
+    "Do NOT use gradients for backgrounds. Use solid colors or subtle grid textures.",
+    "Do NOT use rounded corners greater than 2px. Keep it sharp.",
+    "Use uppercase, widely spaced labels for hierarchy.",
+    "Every interactive element must have a hover state that changes border color or background.",
+    "Use 'data-testid' on all buttons and inputs.",
+    "Implement a 'Print/Export' view that strips all decoration and leaves only black/white text for auditing.",
+    "Use 'Sonner' for toasts.",
+    "Ensure 'Manrope' is used for Headings and 'JetBrains Mono' for data."
+  ]
+}
