@@ -83,7 +83,9 @@ export default function AssessmentPage() {
   }, [data, functionQuestions]);
 
   const currentFunc = data?.functions[activeFunction];
-  const currentCategories = currentFunc ? categoryGroups[currentFunc.id] || [] : [];
+  const currentCategories = useMemo(() => {
+    return currentFunc ? categoryGroups[currentFunc.id] || [] : [];
+  }, [currentFunc, categoryGroups]);
 
   useEffect(() => {
     if (currentCategories.length > 0 && activeCategory === null) {
