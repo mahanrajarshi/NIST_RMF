@@ -64,11 +64,7 @@ export default function LandingPage() {
       toast.error("Please select your industry to proceed");
       return;
     }
-    const params = new URLSearchParams({
-      industry: selectedIndustry,
-      org: orgName || "Anonymous",
-    });
-    navigate(`/assessment?${params.toString()}`);
+    navigate(`/assessment?industry=${encodeURIComponent(selectedIndustry)}&org=${encodeURIComponent(orgName || "Anonymous")}`);
   };
 
   return (

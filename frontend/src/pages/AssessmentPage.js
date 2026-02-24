@@ -339,7 +339,7 @@ export default function AssessmentPage() {
                     </div>
 
                     <RadioGroup
-                      value={answers[q.id]?.toString()}
+                      value={answers[q.id] !== undefined ? answers[q.id].toString() : ""}
                       onValueChange={(val) => handleAnswer(q.id, val)}
                       className="flex flex-wrap gap-2"
                       data-testid={`radio-group-${q.id}`}
